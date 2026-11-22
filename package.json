@@ -1,0 +1,37 @@
+{
+  "name": "zhifufm-sdk",
+  "version": "0.1.0",
+  "description": "支付FM V2 轻量 TypeScript/Bun/Node SDK：RSA2 签名验签、下单、查单与收银台兜底、异步回调核验",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "keywords": [
+    "zhifufm",
+    "payment",
+    "sdk",
+    "rsa2",
+    "wxpay",
+    "alipay"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bun": "^1.3.0",
+    "typescript": "^5.8.0"
+  }
+}
